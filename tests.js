@@ -30,4 +30,13 @@ describe('sayHello', function () {
     it("should return the string 'Hello, Pat!'", function (){
         expect(sayHello("Pat")).toBe("Hello, Pat!");
     });
+    it("should return string 'Hello, World' from undefined", function (){
+        expect(sayHello()).toBe("Hello, World!");
+    });
+    it("should return string 'Hello, World' from true", function (){
+        expect(sayHello(true)).toBe("Hello, World!");
+    });
+    it("should return string 'Hello, World' from false", function (){
+        expect(sayHello(false)).toBe("Hello, World!");
+    });
 });
