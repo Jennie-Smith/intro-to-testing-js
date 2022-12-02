@@ -136,12 +136,12 @@ describe('add', function(){
         expect(add("5", 6)).toBe(11);
     });
     it("should return NaN, adding 'banana' and 'split'", function() {
-        expect(add("banana", "split")).toBe('NaN');
+        expect(add("banana", "split")).toBeNaN();
     });
     it("should return NaN, adding 2 and 'apples'", function() {
-        expect(add(2, "apples")).toBe(NaN);
+        expect(add(2, "apples")).toBeNaN();
     });
     it("should return NaN when undefined", function() {
-        expect(add()).toBe(NaN);
+        expect(add()).toBeNaN();
     });
 })
